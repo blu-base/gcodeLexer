@@ -46,7 +46,6 @@ class GCodeLexer(RegexLexer):
     tokens = {
         'root': [
             
-            #(r'^;.*$', Comment),
             # multi-line comments. Only for
             (r';', Comment.Multiline, 'comment'),
             (r'\(', Comment.Multiline, 'par_comment'),
@@ -67,7 +66,6 @@ class GCodeLexer(RegexLexer):
 
 
             # Non-persistent Arguments (#1-#30)
-            #(r"#(%s)(?=\D)" % '|'.join(str(index+1) for index in range(30)), Name.Variable),
             (r'(?<=#)0*[1-3]?[0-9](?=\D)', Name.Variable.Magic),
             # Numbered Variables
             (r'(?<=#)0*[4-9]?[0-9]{1,5}', Name.Variable),
