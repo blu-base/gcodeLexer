@@ -1,4 +1,4 @@
-gCode Lexer
+gCodeLexer
 ==========
 
 G-Code used to control CNC machines, such as mills, printers, and lathes.
@@ -22,6 +22,7 @@ The online documention for pygments can be found on its homepage: https://pygmen
     get_lexer_by_name('gcode')
 
 or
+
     from pygments.lexers import find_lexer_class
     find_lexer_class('gCodeLexer')
 
