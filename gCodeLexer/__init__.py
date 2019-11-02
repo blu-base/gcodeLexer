@@ -12,6 +12,8 @@ class GCodeLexer(RegexLexer):
     Lexer for gCode
 
     """
+    name = 'gCodeLexer'
+    aliases = ['gcode']
 
 
     fileextensions = ['apt', 'cnc', 'din', 'dnc', 'ecs', 'eia', 'fan', 

@@ -18,9 +18,12 @@ The online documention for pygments can be found on its homepage: https://pygmen
 
 ## Usage
 
-Use `GCodeLexer()` as drop-in replacement for `pygments.lexer` classes.
+    from pygments.lexers import get_lexer_by_name
+    get_lexer_by_name('gcode')
 
-    from gCodeLexer import GCodeLexer
+or
+    from pygments.lexers import find_lexer_class
+    find_lexer_class('gCodeLexer')
 
 
 ## Sample
