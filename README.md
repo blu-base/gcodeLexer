@@ -1,4 +1,4 @@
-gCode Lexer
+gCodeLexer
 ==========
 
 G-Code used to control CNC machines, such as mills, printers, and lathes.
