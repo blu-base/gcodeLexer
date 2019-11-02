@@ -3,5 +3,5 @@ Todo
 
 
 - write a proper example file
-
 - make the repository ready for a pull request on pygments
+- Show unclosed parenthesis comment as error

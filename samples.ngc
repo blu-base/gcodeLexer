@@ -1,12 +1,13 @@
 ( this is a comment)
 ; comment as well
 
- ( commi;ent)
+ ( comment)
  ; comment
 
  ( brocken comment
 
- (;)
+G17 G20 G40 G49 G54 G80 G90 G94
+ ( ))
 
 
 ( ----- Simple G-Code -----)

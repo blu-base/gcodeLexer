@@ -83,7 +83,7 @@ class GCodeLexer(RegexLexer):
             ("(?i)(%s)" % '|'.join(re.escape(entry) for entry in builtins), Name.Builtin),
 
             # math functions, math case-insensitive
-            (r'[-+*/:]', Operator),
+            (r'[-+*/:=]', Operator),
             ("(?i)(%s)" % '|'.join(re.escape(entry) for entry in functions), Operator.Word),
 
             # Subroutines, match label
@@ -98,13 +98,14 @@ class GCodeLexer(RegexLexer):
         'data':[
             (r'\s+', Text),
             (r'\d?\.\d+', Number.Float),
-            (r'\d+', Number.Integer)
+            (r'\d+', Number.Integer),
+            (r'\w+', Text),
         ],
         'par_comment':[
-            (r'[^\)]', Comment.Multiline),
+            (r'[^()]', Comment.Multiline),
             (r'\(', Comment.Multiline, '#push'),
             (r'\)', Comment.Multiline, '#pop'),
-            (r'[)]', Comment.Multiline)
+            (r'\)', Comment.Multiline),
         ],
         'comment':[
              (r'.*;.*$', Comment.Multiline, '#pop'),
