@@ -1,14 +1,15 @@
 gCode Lexer
 ==========
 
-Python Pygments lexer for G-Code used for CNC machines, such as mills, printers, and lathes.
+G-Code used to control CNC machines, such as mills, printers, and lathes.
+This repository is enables synthax highlighting of such code with python's pygments library.
 
-
+This feature has been missing in pygments. At some point this repo will be pushed upstream.
 
 
 Documentation
 ------------
-The online document for pygments can be found on its homepage: https://pygments.org
+The online documention for pygments can be found on its homepage: https://pygments.org
 
 
 ## INSTALL
@@ -17,7 +18,7 @@ The online document for pygments can be found on its homepage: https://pygments.
 
 ## Usage
 
-Use as `GCodeLexer()` drop-in replacement for `pygments.lexer` classes
+Use `GCodeLexer()` as drop-in replacement for `pygments.lexer` classes.
 
     from gCodeLexer import GCodeLexer
 
