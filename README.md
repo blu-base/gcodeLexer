@@ -11,6 +11,9 @@ Documentation
 ------------
 The online documention for pygments can be found on its homepage: https://pygments.org
 
+This repository is recognizing the following file extensions as gcode to be lexed:
+apt, cnc, din, dnc, ecs, eia, fan, fgc, fnc, gc, gcd, GCD, gcode, hnc, i, maz, min, mpf,
+mpr, nc, NC, ncc, ncf, ncg, ncp, ngc, pim, plt, ply, prg, ptp, rol, sbp, tap, xpi
 
 ## INSTALL
 
@@ -25,6 +28,11 @@ or
 
     from pygments.lexers import find_lexer_class
     find_lexer_class('gCodeLexer')
+
+
+After installing, you can also run `pygmentize`. 
+
+  pygmentize -O full -f html -o samples.html samples.ngc
 
 
 ## Sample
