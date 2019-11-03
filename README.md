@@ -32,7 +32,7 @@ or
 
 After installing, you can also run `pygmentize`. 
 
-  pygmentize -O full -f html -o samples.html samples.ngc
+    pygmentize -O full -f html -o samples.html samples.ngc
 
 
 ## Sample
