@@ -64,7 +64,7 @@ class GCodeLexer(RegexLexer):
             (r'(?<![a-zA-Z\<])[gGmMhHdDtT](?=(\d+\.?\d?))', Keyword.Declaration),
             # Coordinates, Feeds, Speeds, and Machining parameter, 
             # match only the label
-            (r'(?<![a-zA-Z\<])[xXyYzZiIjJkKlLpPqQrReEaAbBcCuUvVwWfFsS\^\@](?=(\s*[+-]?\d*\.?\d+))', Keyword.Type),
+            (r'(?<![a-zA-Z\<])[xXyYzZiIjJkKlLpPqQrReEaAbBcCuUvVwWfFsS\^\@](?=(\s*[+-]?\d*\.?\d+|\s*[+-]?#))', Keyword.Type),
 
 
             # Non-persistent Arguments (#1-#30)
